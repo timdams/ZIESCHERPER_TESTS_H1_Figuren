@@ -25,7 +25,7 @@ namespace Tests
         public void TestRechthoekMethode()
         {
             TimsEpicClassAnalyzer tester = new TimsEpicClassAnalyzer(new Rechthoek());
-            if (tester.CheckMethod("ToonOppervlakte", null))
+            if (tester.CheckMethod("ToonOppervlakte", typeof(void)))
             {
                 if (tester.CheckFullProperty("Breedte", typeof(int)) && tester.CheckFullProperty("Lengte", typeof(int)))
                 {
@@ -55,7 +55,7 @@ namespace Tests
         public void TestDriehoekMethode()
         {
             TimsEpicClassAnalyzer tester = new TimsEpicClassAnalyzer(new Driehoek());
-            if (tester.CheckMethod("ToonOppervlakte", null))
+            if (tester.CheckMethod("ToonOppervlakte", typeof(void)))
             {
                 if (tester.CheckFullProperty("Basis", typeof(int)) && tester.CheckFullProperty("Hoogte", typeof(int)))
                 {
